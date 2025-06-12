@@ -59,7 +59,6 @@ public class ServerController implements Initializable, Runnable {
             label.setText("Correct answer. Answered by: " + data.getUsername() + " from IP: " + data.getIp());
             if (questions.isEmpty()) {
                 label.setText("All questions answered. Game over.");
-                //TODO: Reset the game
             } else {
                 questions.removeFirst();
             }
